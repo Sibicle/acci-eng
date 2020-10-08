@@ -14,10 +14,7 @@ I don't think I have ever encountered two vacuum hoses or attachments that fit t
 
 This morning I was using my new Wen [drywall sander](https://amzn.to/2L4tawS) to remove some drywall texture. Everything was going great until I noticed the hose had come detached, there was no more suction, and the sander was flinging drywall dust all over the carpet, rendering the contraption utterly pointless. I said enough is enough and decided that this would be a perfect opportunity to take advantage of the 3D printer. Credit to [Marius Hornberger's](https://www.youtube.com/channel/UCn7lavsPdVGV0qmEEBT6NyA) [video](https://www.youtube.com/watch?v=k8mzMDLqENA) for planting this idea in my head.
 
-<div class='embed-container'>
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/k8mzMDLqENA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
+{{ youtube(id="k8mzMDLqENA", class="embed-container") }}
 
 It was a simple matter to get the dimensions off both vacuum hose attachments, and the sizes of the hose attachments were close enough that the transition between them didn't cause any issues.
 
