@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://anpu-zola-theme.netlify.app"
+base_url = "https://accidental.engineering"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -11,18 +11,18 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-title = "Anpu theme"
-description = "A clean blogging theme"
+title = "accidental engineering"
+description = "project build logs, fabrication tutorials, software development woes"
 generate_feed = true
 
 taxonomies = [
-    {name = "tags", rss = true},
-    {name = "categories", rss = true},
+    { name = "tags", rss = true },
+    { name = "categories", rss = true },
 ]
 
 [extra]
-anpu_date_format="%e %B %Y"
-anpu_menu_links = [
-    { url = "$BASE_URL/about/", name = "About" },
-    { url = "$BASE_URL/tags/", name = "Tags" },
+date_format="%e %B %Y"
+menu_links = [
+    { url = "$BASE_URL/tags/", name = "tags" },
+    { url = "https://nedell.com", name = "portfolio" },
 ]
