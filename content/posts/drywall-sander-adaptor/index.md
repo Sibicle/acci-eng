@@ -10,7 +10,7 @@ I don't think I have ever encountered two vacuum hoses or attachments that fit t
 
 <!-- more -->
 
-![Stock photo of off-the-shelf adaptor](https://i.snap.as/a5wfISP.jpg)
+![stock photo of off-the-shelf adaptor](01-stock-adaptor.jpg)
 
 This morning I was using my new Wen [drywall sander](https://amzn.to/2L4tawS) to remove some drywall texture. Everything was going great until I noticed the hose had come detached, there was no more suction, and the sander was flinging drywall dust all over the carpet, rendering the contraption utterly pointless. I said enough is enough and decided that this would be a perfect opportunity to take advantage of the 3D printer. Credit to [Marius Hornberger's](https://www.youtube.com/channel/UCn7lavsPdVGV0qmEEBT6NyA) [video](https://www.youtube.com/watch?v=k8mzMDLqENA) for planting this idea in my head.
 
@@ -18,17 +18,17 @@ This morning I was using my new Wen [drywall sander](https://amzn.to/2L4tawS) to
 
 It was a simple matter to get the dimensions off both vacuum hose attachments, and the sizes of the hose attachments were close enough that the transition between them didn't cause any issues.
 
-![CAD model of finished adaptor](https://i.snap.as/v40lkxj.jpg)
+![CAD model of finished adaptor](02-adaptor-cad.jpg)
 
 I decided to try an idea that has been kicking around in my head, and instead of relying on the automatic support generation in [Simplify3D](https://www.simplify3d.com/), design the support in [Fusion 360](https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/How-to-activate-start-up-or-educational-licensing-for-Fusion-360.html). The majority of the support was a single layer width thick, widening out towards the top at a shallow angle I thought the printer would be able to handle with aplomb. I offset the top of the support by one layer-width horizontally (0.35 mm in my case), and two layer-thicknesses vertically (1.0mm), thinking to use the slicer's support material at the interface boundary.
 
-![Cut-away CAD view showing modeled support structures](https://i.snap.as/2cdq5P4.jpg)
+![cut-away CAD view showing modeled support structures](03-adaptor-cad-section.jpg)
 
 _Left: cross-section of the completed adaptor. Right: the same cross-section, but showing the modeled-in-place support structures_
 
 One small tip I have is to create a tiny (~ .2mm) bridge between the different bodies. This isn't the most elegant solution but it will save you time fussing with accurately positioning the different bodies relative to one another after importing them into the slicer. The printer will still put forth a valiant effort to print it, but being this tiny, any surface finish issues it causes will be the least of your worries.
 
-![CAD model showing sacrificial support structure](https://i.snap.as/X4iZfIl.jpg)
+![CAD model showing sacrificial support structure](04-support-experiment.jpg)
 
 The support material experiment was a moderate success. If I use this technique again, there are a few things I would do differently:
 
@@ -39,4 +39,4 @@ The support material experiment was a moderate success. If I use this technique 
 
 Overall the part turned out to be a success! The fit with the Wen hose is tight, but it snapped on in the end. I don't have the vacuum available to test the fit on the other end, but once I do I will make some adjustments to the part and the support structure and make another revision. Look for the conclusion to my support adventures, as well as a Thingiverse link to the finalized adapter in another post!
 
-![Photo of draft adaptor attached to Wen hose](https://i.snap.as/QDRSXO4.jpg)
+![photo of draft adaptor attached to Wen hose](05-printed-adaptor.jpg)
