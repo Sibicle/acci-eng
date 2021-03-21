@@ -292,7 +292,7 @@ article img {
   max-width: 100%;
   display: block;
   height: auto;
-  margin: 0 auto .5em;
+  margin: 3em 0;
 }
 
 .read-more {
@@ -360,6 +360,11 @@ footer {
   border-top: thin solid #f1f1f1;
   margin-top: 3em;
   font-size: 16px;
+
+  p {
+    text-align: center;
+    color: grey;
+  }
 }
 
 ul.language-select {
