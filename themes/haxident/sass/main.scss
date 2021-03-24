@@ -40,7 +40,7 @@ summary {
 }
 
 main {
-  outline:none;
+  outline: none;
 }
 
 /* Headers */
@@ -86,21 +86,21 @@ a.active {
 
 a.skip-main {
   left:-999px;
-  position:absolute;
-  top:auto;
+  position: absolute;
+  top: auto;
   width:1px;
   height:1px;
-  overflow:hidden;
+  overflow: hidden;
   z-index:-999;
 }
 
-a.skip-main:focus,
-a.skip-main:active {
+a.skip-main: focus,
+a.skip-main: active {
   left: auto;
   top: 0px;
   width: auto;
   height: auto;
-  overflow:auto;
+  overflow: auto;
   z-index:999;
   padding: 4px 6px 4px 6px;
   text-decoration: underline;
