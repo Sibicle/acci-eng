@@ -1,6 +1,6 @@
 +++
 title = "Wen drywall sander to Fein dust extractor 3D printed adaptor"
-date = 2021-08-28
+date = 2019-08-28
 
 [taxonomies]
 tags = ["3d printer", "project", "garage"]
