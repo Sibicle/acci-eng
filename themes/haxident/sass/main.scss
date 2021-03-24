@@ -18,6 +18,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+$divider-color: #f1f1f1;
+$hover-color: #bd93f9;
+$hover-underline-color: rgba(189, 147, 249, .5);
+$hover-underline-transparent: rgba(189, 147, 249, 0);
+
 article,
 aside,
 details,
@@ -59,8 +64,10 @@ h3 {
 /* Links */
 
 a {
-  color: #1d60a3;
+  color: rgb(98, 114, 164);
+  border-bottom: 1px solid $hover-underline-transparent;
   text-decoration: none;
+  transition: color .5s, border-bottom .5s;
 }
 
 a:active,
@@ -70,18 +77,18 @@ a:hover {
 
 a:hover,
 a:focus {
-  color: #a31d1d;
-  border-bottom: 1px solid rgba(163, 29, 29, .5);
+  color: $hover-color;
+  border-bottom: 1px solid $hover-underline-color;
 }
 
 a:active {
-  color: #a31d1d;
+  color: $hover-color;
   opacity: 0.9;
-  border-bottom: 1px solid rgba(163, 29, 29, .5);
+  border-bottom: 1px solid $hover-underline-color;
 }
 
 a.active {
-  color: #a31d1d;
+  color: $hover-color;
 }
 
 a.skip-main {
@@ -94,8 +101,8 @@ a.skip-main {
   z-index:-999;
 }
 
-a.skip-main: focus,
-a.skip-main: active {
+a.skip-main:focus,
+a.skip-main:active {
   left: auto;
   top: 0px;
   width: auto;
@@ -145,7 +152,7 @@ kbd {
 /* Styles */
 
 blockquote {
-  border-left: 2px solid #cccccc;
+  border-left: 2px solid $divider-color;
   padding: 0.1em 1em;
   margin-left: 0.75em;
 }
@@ -158,7 +165,7 @@ p {
 hr {
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid $divider-color;
 }
 
 ul ol, ol ol, ul ul {
@@ -220,7 +227,7 @@ main h1 {
 /* articles */
 
 article:not(:last-of-type) {
-  border-bottom: thin solid #f1f1f1;
+  border-bottom: thin solid $divider-color;
   padding-bottom: 2em;
 }
 
@@ -240,7 +247,11 @@ article header h1 a {
 .article-info {
   font-size: 0.75em;
   color: grey;
-  margin-top: 1em;
+  margin-top: 2em;
+}
+
+.post .article-info {
+  margin-bottom: 3em;
 }
 
 .article-info a {
@@ -248,7 +259,7 @@ article header h1 a {
 }
 
 .article-info a:hover {
-  color: #a31d1d;
+  color: $hover-color;
 }
 
 .post-short-list .article-info {
@@ -287,6 +298,12 @@ article header h1 a {
   margin-right: 1em;
 }
 
+#remarkbox-div {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid $divider-color;
+}
+
 figure {
   max-width: 30em;
   margin: 3em auto;
@@ -312,7 +329,7 @@ figure figcaption {
   display: block;
   height: 1px;
   border: 0;
-  border-top: thin solid #f1f1f1;
+  border-top: thin solid $divider-color;
   width: 25%;
   margin: 1em auto;
 }
@@ -358,14 +375,14 @@ figure figcaption {
 }
 
 .pagination-item a:hover, .pagination-item   a:focus {
-  color: #a31d1d;
+  color: $hover-color;
   border-bottom: 0;
 }
 
 /* footer */
 
 footer {
-  border-top: thin solid #f1f1f1;
+  border-top: thin solid $divider-color;
   margin-top: 3em;
   font-size: 16px;
 
