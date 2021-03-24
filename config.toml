@@ -8,9 +8,10 @@ title = "accidental engineering"
 description = "project build logs, fabrication tutorials, software development woes"
 generate_feed = true
 
+theme = "haxident"
+
 taxonomies = [
     { name = "tags", rss = true },
-    { name = "categories", rss = true },
 ]
 
 [extra]

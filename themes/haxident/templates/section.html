@@ -3,6 +3,7 @@
 {% block content %}
 <div class="posts">
   {% for page in section.pages %}
+    {{ page.slug }}
     {{ page_macros::page_listing(page=page) }}
   {% endfor %}
 </div>
