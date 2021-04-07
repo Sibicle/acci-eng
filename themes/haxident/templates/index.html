@@ -19,8 +19,8 @@
 
   {%- block unfurl_img %}
   {%- if page.extra.unfurl_img %}
-  <meta property="og:image" content="{{ get_url(path=page.extra.unfurl_img) | safe }}">
-  <meta name="image" content="{{ get_url(path=page.extra.unfurl_img) | safe }}">
+  <meta property="og:image" content="{{ page.extra.unfurl_img | safe }}">
+  <meta name="image" content="{{ page.extra.unfurl_img | safe }}">
   {%- else %}
   <meta property="og:image" content="{{ get_url(path='gear.jpg') | safe }}">
   <meta name="image" content="{{ get_url(path='gear.jpg') | safe }}">

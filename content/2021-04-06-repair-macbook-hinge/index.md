@@ -88,7 +88,7 @@ hooray! \o/ it is fixed. I venture that the hinge may be even MORE securely atta
 
 ## bonus
 
-I don't know why this always happens to me, but here is my laptop from 2005. I think the screw is a rather more elegant solution that what appears to be electrical tape, don't you?
+I don't know why this always happens to me, but here is my "custom" :raised_eyebrow: space-gray laptop from 2005. I think the screw is a rather more elegant solution that what appears to be electrical tape, don't you?
 
 {{
   img(
