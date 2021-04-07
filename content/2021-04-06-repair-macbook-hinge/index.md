@@ -5,6 +5,9 @@ slug = "care-and-feeding-of-macbook"
 
 [taxonomies]
 tags = ["repair", "electronics", "tuesday-tipday"]
+
+[extra]
+unfurl_img = "02-drill-hole.jpg"
 +++
 
 did your friend somehow manage to shatter your macbook screen from the outside by smashing the apple logo with the pointy bit of a Vive controller? did you cheap out and buy a Chinese knockoff replacement screen? is the hinge of said lcd panel now loose and wobbly? usually, when something breaks, I would just buy a new one, without even trying to fix it. but as I am a reasonably unsuccessful software developer, and can not afford a new laptop right now, today's _Tuesday Tipday_ will help you solve this issue in seven easy steps!
@@ -28,8 +31,7 @@ did your friend somehow manage to shatter your macbook screen from the outside b
   img(
     img='02-drill-hole.jpg',
     alt='laptop hinge with flush cutters, before and after',
-    caption='definitely see no issues here',
-    unfurl=true
+    caption='definitely see no issues here'
   )
 }}
 

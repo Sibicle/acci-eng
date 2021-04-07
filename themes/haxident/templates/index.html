@@ -7,17 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="no-referrer-when-downgrade">
 
-  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   <meta name="title" property="og:title" content="{{ config.title }}" />
 
+  {%- if page.title %}
+  <meta name="description" property="og:description" content="{{ page.title }}">
+  {%- elif section.title %}
+  <meta name="description" property="og:description" content="{{ section.title }}">
+  {%- elif config.description %}
   <meta name="description" property="og:description" content="{{ config.description }}">
-  <meta name="image" property="og:image" content="02-drill-hole.jpg">
+  {%- endif %}
+
+  {%- block unfurl_image %}
+  {%- if page.extra.unfurl_img %}
+  <meta name="image" property="og:image" content="{{ page.extra.unfurl_img }}">
+  {%- else %}
+  <meta name="image" property="og:image" content="gear.jpg">
+  {%- endif -%}
+  {% endblock unfurl_image %}
+
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
   <link rel="stylesheet" href="{{ get_url(path='main.css', trailing_slash=false) }}">
-
-  {% if config.generate_feed %}
+  {% if config.generate_feed -%}
   <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
-  {% endif %}
+  {%- endif %}
 </head>
 <body>
   <div class="container">
