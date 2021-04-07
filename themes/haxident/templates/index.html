@@ -7,14 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="no-referrer-when-downgrade">
 
-  <meta name="title" property="og:title" content="{{ config.title }}" />
-
   {%- if page.title %}
-  <meta name="description" property="og:description" content="{{ page.title }}">
+  <meta name="title" property="og:title" content="{{ page.title }}">
   {%- elif section.title %}
-  <meta name="description" property="og:description" content="{{ section.title }}">
-  {%- elif config.description %}
-  <meta name="description" property="og:description" content="{{ config.description }}">
+  <meta name="title" property="og:title" content="{{ section.title }}">
+  {%- elif config.title %}
+  <meta name="title" property="og:title" content="{{ config.title }}">
   {%- endif %}
 
   {%- block unfurl_image %}
