@@ -82,3 +82,15 @@ did your friend somehow manage to shatter your macbook screen from the outside b
 }}
 
 hooray! \o/ it is fixed. I venture that the hinge may be even MORE securely attached than it was before? I wonder if this can still be accepted as a trade in.
+
+## bonus
+
+I don't know why this always happens to me, but here is my laptop from 2005. I think the screw is a rather more elegant solution that what appears to be electrical tape, don't you?
+
+{{
+  img(
+    img='08-throwback-bonus.jpg',
+    alt='really damaged laptop',
+    caption='cool billabong tshirt'
+  )
+}}
