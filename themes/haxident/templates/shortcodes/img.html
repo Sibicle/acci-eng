@@ -5,4 +5,8 @@
   {%- if caption %}
   <figcaption>{{ caption }}</figcaption>
   {%- endif %}
+
+  {%- if unfurl %}
+  <meta name="image" property="og:image" content="{{ img }}" />
+  {%- endif %}
 </figure>

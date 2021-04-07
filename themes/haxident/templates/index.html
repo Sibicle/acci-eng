@@ -8,12 +8,14 @@
   <meta name="referrer" content="no-referrer-when-downgrade">
 
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-  <meta name="description" content="{{ config.description }}">
+  <meta name="title" property="og:title" content="{{ config.title }}" />
 
-  <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
+  <meta name="description" property="og:description" content="{{ config.description }}">
+
+  <link rel="stylesheet" href="{{ get_url(path='main.css', trailing_slash=false) }}">
 
   {% if config.generate_feed %}
-    <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
+  <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
   {% endif %}
 </head>
 <body>

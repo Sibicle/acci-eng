@@ -28,7 +28,8 @@ did your friend somehow manage to shatter your macbook screen from the outside b
   img(
     img='02-drill-hole.jpg',
     alt='laptop hinge with flush cutters, before and after',
-    caption='definitely see no issues here'
+    caption='definitely see no issues here',
+    unfurl=true
   )
 }}
 
