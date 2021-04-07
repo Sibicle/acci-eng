@@ -11,6 +11,8 @@
   <meta name="title" property="og:title" content="{{ page.title }}">
   {%- elif section.title %}
   <meta name="title" property="og:title" content="{{ section.title }}">
+  {%- elif config.description %}
+  <meta name="title" property="og:title" content="{{ config.description }}">
   {%- elif config.title %}
   <meta name="title" property="og:title" content="{{ config.title }}">
   {%- endif %}
