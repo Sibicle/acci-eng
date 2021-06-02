@@ -3,7 +3,7 @@ title = "the worst thing I have ever made"
 date = 2020-04-11
 
 [taxonomies]
-tags = ["project", "garden", "woodworking"]
+tags = ["project", "garden", "wood"]
 +++
 
 I love Boulder for many reasons. one of them is the roulette wheel that is spring weather. the winds are a changin', then next thing you know the t-shirt you were wearing seems silly for the 30 degree snowstorm you find yourself in.

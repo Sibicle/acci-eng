@@ -3,7 +3,7 @@ title = "quick-strike tactical deck"
 date = 2019-09-27
 
 [taxonomies]
-tags = ["project", "home", "woodworking", "tuesday-tipday"]
+tags = ["project", "home", "wood", "tuesday-tipday"]
 +++
 
 a friend's rental property had a death-trap of a deck, uneven decking, dangling railings, rotted joists. the stringer was even peeling off of the house! with the move-in date of the next tenants imminent, and dubious of the home owner association's ability to perform timely repairs, we decided immediate action was necessary.
